@@ -14,6 +14,8 @@ At the end we will create and publish a pipeline with all of the necessary steps
 
 The project is configured in the following steps:
 
+![](images/architecture.PNG)
+
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 
