@@ -29,11 +29,13 @@ The best model is VotingEnsemble with 91,7% of accuracy
 ![](images/best_model.PNG)
 
 4. Deploy the best model with Azure Container Instance
-TODO: inserire deploy_best_model
+![](images/deploy_best_model.PNG)
+
 5. Enable Application Insights (screan application and log)
 I enabled application insights changing file logs.py: added settings enable_app_insights=True
 
 ![](images/app_insights.PNG)
+
 The screen showing logs:
 ![](images/logs.PNG)
 
@@ -46,23 +48,32 @@ Swagger documentation allows us to have all of the necessary information to cons
 Once the model is deploy, we can interact with it using provided file endpoint.py
 
 ![](images/consume_model.PNG)
+
 8. Create, publish and consume pipeline
 At the end I created, published and consumed a pipeline:
 ![](images/pipeline_run.PNG)
+
 Pipeline endpoint:
 ![](images/pipeline_endpoint.PNG)
+
 Pipeline is composed of 2 modules: dataset and AutoML module
 ![](images/pipeline_ds_automl_module.PNG)
+
 We can see the status of pipeline is "Active":
 ![](images/pipeline_status_active.PNG)
 
 The same steps we can see in the RunDetails widget of the Notebook
 ![](images/run_details_steps.PNG)
+
 This is the pipeline status in ML Studio:
 ![](images/pipeline_schedule_finished.PNG)
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+Here is the screecast link that shows all of the steps desribed above
+https://drive.google.com/file/d/18y_gMlfuKuz4UaRk4d8AWF-9IiZAxqCn/view?usp=sharing
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+## Future work
+Some possible improvement can be:
+1. Using of Apache Benchmark
+2. Analizing of Application Insights data
+
